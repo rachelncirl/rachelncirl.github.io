@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	
+    <head>
+        <title>Rachel Roche</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+		<div class="container-1">
+			<div class="wrapper">
+			
+				<!-- Navigation Bar -->
+				<div>
+					<ul class="nav-ul">
+					  <li><a class="active nav-li" href="#profile">Profile</a></li>
+					  <li><a class="nav-li" href="#experience">Experience</a></li>
+					  <li><a class="nav-li" href="#education">Education</a></li>
+					  <li><a class="nav-li" href="#skills">Skills</a></li>
+					  <li><a class="nav-li" href="#interests">Interests</a></li>
+					  <li><a class="nav-li" href="#social">Social</a></li>
+					</ul>
+				</div>
+				
+		
+				<div class="container-2">
+					
+					<div class="box-1">
+
+						<h1> RACHEL ROCHE</h1>
+						<h3> 2A Forest Way, <br>River Valley, <br>Swords, <br>Co. Dublin. <br> 
+						<a href="mailto:rachelcallan@live.ie" target="_blank">rachelcallan@live.ie</a> <br> +353 83 4284297 </h3>
+						
+					</div>
+					
+					<div class="box-2">
+						<img src = "images/rachel4.png" alt = "rachel" style="height:250px;"/>
+					</div>
+				</div>
+			
+
+				
+				<div id="profile">
+					<h2> Profile </h2>
+					<p>I am a Bachelor of Arts graduate from the <span style="color:#00AADB;font-weight:bold;border-bottom: 1px solid #00AADB;">National University of Ireland Maynooth</span>, looking to transition into the software engineering industry.<br>
+					In 2018, I co-founded <span style="color:#00AADB;font-weight:bold;border-bottom: 1px solid #00AADB;">RCH Technologies</span> with my husband, which allowed me to combine my passion for healthy eating and diet - specifically for families with young children, with technology.<br>
+					I am looking to build on my experience and passion, and move my focus to application engineering, so I can deliver concepts end to end - from ideation to fruition.</p>
+				</div>
+				
+				<div id="experience">
+					<h2> Experience</h2>
+					<h3> RCH TECHNOLOGIES | ADMIN, UX & QA | JANUARY 2018 - PRESENT </h3>
+					<ul>
+					<li>Design and Quality Assurance of a number of Android applications developed to promote a healthy diet and eating for families. <a href="https://play.google.com/store/apps/developer?id=RCH+Technologies" target="_blank">Tots2Toddlers on Play Store</a></li>
+					<li><a href="https://tots2toddlers.rchtech.ie" target="_blank">Tots2Toddlers</a> website, focused on baby lead weaning and meal planning.</li>
+					<li>Social Media management and promotion to reach out to a wide audience. <a href="https://www.instagram.com/tots_2_toddlers/?utm_source=ig_embed&ig_rid=f39ddfcd-2db5-4cff-b216-92ea15f11cb0" target="_blank">Instagram</a></li>
+					<li>General administrative duties - VAT returns, tax returns, payroll, contracts and accounts.</li>
+					</ul>
+				</div>
+
+			    <div id="education">
+					<h2> Education </h2>
+					
+					<div class="container-2">
+						<div class="box-1">
+							
+							<p><b>2024-Present:</b> National College of Ireland, Dublin<br>
+							<b>Qualification:</b> Higher Diploma in Science in Computing Level 8<br>
+							<b>Results:</b> Due December 2025</p>
+							
+							<p><b>2004-2007 & 2015:</b> National University of Ireland Maynooth<br>
+							<b>Qualification:</b> Bachelor of Arts Level 8<br>
+							<b>Results:</b> Honors Arts Degree in English and Geography H2.1</p>
+							
+						</div>
+						
+						<div class="box-2">
+
+							<p><b>2012-2013:</b> Southern Regional College, Newry Campus<br>
+							<b>Qualification:</b> Certificate in Counselling Skills</p>
+
+							<p><b>1999-2004:</b> St. Mary's College, Dundalk <br>
+							<b>Qualification:</b> Leaving Certificate<br>
+							<b>Subjects:</b> Geography (A2), Home Economics (B1), Irish (B1), English (B2), French (B2), Biology(C1) and Mathematics (D1).</p>
+						
+						</div>
+					</div>
+				</div>
+
+				<div id="skills">
+					<h2> Skills & Abilities </h2>
+					<ul>
+						<li>Design Oriented.</li>
+						<li>Attention to detail.</li>
+						<li>Focused on customer experience.</li>
+						<li>Analytical & Problem Solving.</li>
+					</ul>
+				</div>
+
+				<div id="interests">
+					<h2> Activities and Interests </h2>
+					<p>Technology, Cooking, Diet & Nutrition, Healthy Living, Hiking & Fitness</p>
+				</div>
+			   
+			    <div id="social">
+					<h2> Social Media </h2>
+					<ul>
+						<li><a href="https://www.instagram.com/tots_2_toddlers/?utm_source=ig_embed&ig_rid=f39ddfcd-2db5-4cff-b216-92ea15f11cb0" target="_blank">Instagram.</a></li>
+						<li><a href="https://www.facebook.com/toddlerfoodie" target="_blank">Facebook.</a></li>
+						<li><a href="https://www.linkedin.com/in/rachel-callan-079b0b64/" target="_blank">LinkedIn.</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<div id="googleMap" style="width:100%;height:400px;"></div>
+
+	</body>
+	
+	<script>
+		function myMap() {
+			var myCenter = new google.maps.LatLng(53.450538, -6.239845);
+			var mapProp = {
+				center : myCenter,
+				zoom : 12,
+				scrollwheel : false,
+				draggable : false,
+				mapTypeId : google.maps.MapTypeId.ROADMAP
+			};
+			var map = new google.maps.Map(document.getElementById("googleMap"),
+					mapProp);
+			var marker = new google.maps.Marker({
+				position : myCenter
+			});
+			marker.setMap(map);
+		}
+	</script>
+
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-hMYGwrJ0St7Mub12lxGpKiXA-9EvGb8&amp;callback=myMap"></script>
+	
+</html>

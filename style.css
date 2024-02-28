@@ -1,0 +1,114 @@
+h1{
+	color: #00AADB;
+	font-family: "Roboto", sans-serif;
+	text-shadow: 2px 2px;
+}
+h2{
+	color: #00AADB;
+	font-family: "Roboto", sans-serif;
+}
+
+h3,p,li{
+	color: #080808;
+	font-family: "Montserrat", sans-serif;
+}
+
+ul{
+	list-style-type:circle;
+}
+
+a {
+	color: #00AADB;
+	font-family: "Montserrat", sans-serif;
+}
+
+body{
+	background-color: #FEFEFFE;
+}
+
+img {
+  border-radius: 50%;
+}
+
+div {
+	padding-top: 10px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+}
+
+.nav-ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #00AADB;
+}
+
+.nav-li {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+@media(min-width:768px) {
+	.container-1{
+		display:flex;
+		border: 1px #ccc solid;
+		padding: 10px;
+
+	}
+
+	.container-2{
+		display:flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	
+	.container-3{
+		display:flex;
+	}
+}
+
+.wrapper {
+	flex:1;
+	order:1;
+}
+
+.box-1{
+	flex:1;
+	order:1;
+}
+
+.box-2{
+	flex:1;
+	order:2;
+}
+
+.nav-1{
+	flex:1;
+	order:1;
+}
+.nav-2{
+	flex:1;
+	order:2;
+}
+.nav-3{
+	flex:1;
+	order:3;
+}
+.nav-4{
+	flex:1;
+	order:4;
+}
+.nav-5{
+	flex:1;
+	order:5;
+}
+.nav-6{
+	flex:1;
+	order:6;
+}
