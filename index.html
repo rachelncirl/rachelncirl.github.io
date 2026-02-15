@@ -1,142 +1,266 @@
 <!DOCTYPE html>
-<html>
-	
-    <head>
-        <title>Rachel Roche</title>
-		<link rel="stylesheet" href="style.css">
-	</head>
+<html lang="en">
+<head>
+  <title>Rachel Roche - Curriculum Vitae</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="/images/icon.png" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
 
-	<body>
-		<div class="container-1">
-			<div class="wrapper">
+<body>
+
+<nav class="navbar navbar-expand-sm">
+  <div class="container-fluid">
+    <a class="navbar-brand padded-logo" href="#"><img src="images/logo5.png" alt="Logo" style="height:50px;"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#profile">Profile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#education">Education</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#experience">Experience</a>
+        </li>  
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Misc</a>
+          <ul class="dropdown-menu dropdown-menu-right">
+            <li><a class="dropdown-item" href="#skills">Skills</a></li>
+            <li><a class="dropdown-item" href="#interests">Interests</a></li>
+            <li><a class="dropdown-item" href="#social">Social</a></li>
+            <li><a class="dropdown-item" href="#contact">Contact</a></li>
+            <li><a class="dropdown-item" href="cover-letter.html">Cover Letter</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Carousel -->
+<div id="carousel" class="carousel slide" data-bs-ride="carousel">
+
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+  </div>
+  
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner">
+    <div id="car1" class="carousel-item active">
+      <img src="images/car1.png" alt="Computing Pic 1" class="d-block" style="width:100%">
+    </div>
+    <div id="car2" class="carousel-item">
+      <img src="images/car3.png" alt="Computing Pic 2" class="d-block" style="width:100%">
+    </div>
+  </div>
+  
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+<div id="profile" class="container-fluid padded-container">
+	<div class="row justify-text">
+		<div class="col-lg-1"></div>
+		<div class="col-lg-5 col-sm-12">
+			<h2>Profile</h2>
+			<p>I am a Bachelor of Arts graduate from the National University of Ireland Maynooth, looking to transition into the software engineering industry.</p>
 			
-				<!-- Navigation Bar -->
-				<div>
-					<ul class="nav-ul">
-					  <li><a class="active nav-li" href="#profile">Profile</a></li>
-					  <li><a class="nav-li" href="#experience">Experience</a></li>
-					  <li><a class="nav-li" href="#education">Education</a></li>
-					  <li><a class="nav-li" href="#skills">Skills</a></li>
-					  <li><a class="nav-li" href="#interests">Interests</a></li>
-					  <li><a class="nav-li" href="#social">Social</a></li>
-					  <li><a class="nav-li" href="coverletter.html" target="_blank">Cover Letter</a></li>
-					</ul>
-				</div>
-				
-		
-				<div class="container-2">
-					
-					<div class="box-1">
+            <p>In 2018, I co-founded RCH Technologies with my husband, which allowed me to combine my passion for healthy eating and diet - specifically for families with young children, with technology.</p>
+            
+            <p>I am looking to build on my experience and passion, and move my focus to application engineering, so I can deliver concepts end to end - from ideation to fruition.</p>
 
-						<h1> RACHEL ROCHE</h1>
-						<h3> 2A Forest Way, <br>River Valley, <br>Swords, <br>Co. Dublin. <br> 
-						<a href="mailto:rachelcallan@live.ie" target="_blank">rachelcallan@live.ie</a> <br> +353 83 4284297 </h3>
-						
-					</div>
-					
-					<div class="box-2">
-						<img src = "rachel4.PNG" alt = "rachel" style="height:250px;"/>
-					</div>
-				</div>
-			
-
-				
-				<div id="profile">
-					<h2> Profile </h2>
-					<p>I am a Bachelor of Arts graduate from the <span style="color:#00AADB;font-weight:bold;border-bottom: 1px solid #00AADB;">National University of Ireland Maynooth</span>, looking to transition into the software engineering industry.<br>
-					In 2018, I co-founded <span style="color:#00AADB;font-weight:bold;border-bottom: 1px solid #00AADB;">RCH Technologies</span> with my husband, which allowed me to combine my passion for healthy eating and diet - specifically for families with young children, with technology.<br>
-					I am looking to build on my experience and passion, and move my focus to application engineering, so I can deliver concepts end to end - from ideation to fruition.</p>
-				</div>
-				
-				<div id="experience">
-					<h2> Experience</h2>
-					<h3> RCH TECHNOLOGIES | ADMIN, UX & QA | JANUARY 2018 - PRESENT </h3>
-					<ul>
-					<li>Design and Quality Assurance of a number of Android applications developed to promote a healthy diet and eating for families. <a href="https://play.google.com/store/apps/developer?id=RCH+Technologies" target="_blank">Tots2Toddlers on Play Store</a></li>
-					<li><a href="https://tots2toddlers.rchtech.ie" target="_blank">Tots2Toddlers</a> website, focused on baby lead weaning and meal planning.</li>
-					<li>Social Media management and promotion to reach out to a wide audience. <a href="https://www.instagram.com/tots_2_toddlers/?utm_source=ig_embed&ig_rid=f39ddfcd-2db5-4cff-b216-92ea15f11cb0" target="_blank">Instagram</a></li>
-					<li>General administrative duties - VAT returns, tax returns, payroll, contracts and accounts.</li>
-					</ul>
-				</div>
-
-			    <div id="education">
-					<h2> Education </h2>
-					
-					<div class="container-2">
-						<div class="box-1">
-							
-							<p><b>2024-Present:</b> National College of Ireland, Dublin<br>
-							<b>Qualification:</b> Higher Diploma in Science in Computing Level 8<br>
-							<b>Results:</b> Due December 2025</p>
-							
-							<p><b>2004-2007 & 2015:</b> National University of Ireland Maynooth<br>
-							<b>Qualification:</b> Bachelor of Arts Level 8<br>
-							<b>Results:</b> Honors Arts Degree in English and Geography H2.1</p>
-							
-						</div>
-						
-						<div class="box-2">
-
-							<p><b>2012-2013:</b> Southern Regional College, Newry Campus<br>
-							<b>Qualification:</b> Certificate in Counselling Skills</p>
-
-							<p><b>1999-2004:</b> St. Mary's College, Dundalk <br>
-							<b>Qualification:</b> Leaving Certificate<br>
-							<b>Subjects:</b> Geography (A2), Home Economics (B1), Irish (B1), English (B2), French (B2), Biology(C1) and Mathematics (D1).</p>
-						
-						</div>
-					</div>
-				</div>
-
-				<div id="skills">
-					<h2> Skills & Abilities </h2>
-					<ul>
-						<li>Design Oriented.</li>
-						<li>Attention to detail.</li>
-						<li>Focused on customer experience.</li>
-						<li>Analytical & Problem Solving.</li>
-					</ul>
-				</div>
-
-				<div id="interests">
-					<h2> Activities and Interests </h2>
-					<p>Technology, Cooking, Diet & Nutrition, Healthy Living, Hiking & Fitness</p>
-				</div>
-			   
-			    <div id="social">
-					<h2> Social Media </h2>
-					<ul>
-						<li><a href="https://www.instagram.com/tots_2_toddlers/?utm_source=ig_embed&ig_rid=f39ddfcd-2db5-4cff-b216-92ea15f11cb0" target="_blank">Instagram.</a></li>
-						<li><a href="https://www.facebook.com/toddlerfoodie" target="_blank">Facebook.</a></li>
-						<li><a href="https://www.linkedin.com/in/rachel-callan-079b0b64/" target="_blank">LinkedIn.</a></li>
-					</ul>
-				</div>
+		</div>
+		<div class="col-lg-6 col-sm-12">
+			<div class="center">
+				<img src="images/rachel.PNG" class="rounded-circle img-fluid" alt="Rachel Roche" style="height:300px;"/>
 			</div>
 		</div>
-		
-		<div id="googleMap" style="width:100%;height:400px;"></div>
+	</div>
+</div>
 
-	</body>
-	
-	<script>
-		function myMap() {
-			var myCenter = new google.maps.LatLng(53.450538, -6.239845);
-			var mapProp = {
-				center : myCenter,
-				zoom : 12,
-				scrollwheel : false,
-				draggable : false,
-				mapTypeId : google.maps.MapTypeId.ROADMAP
-			};
-			var map = new google.maps.Map(document.getElementById("googleMap"),
-					mapProp);
-			var marker = new google.maps.Marker({
-				position : myCenter
-			});
-			marker.setMap(map);
-		}
-	</script>
+<div id="education" class="container-fluid padded-container bg-blue">
+	<div class="row justify-text">
+	    <h2 style="color:white">Education</h2>
+		<div class="col-lg-3 col-sm-6">
+	      <div class="card">
+            <img class="card-img-top" src="images/white-nci2.png" alt="Card image" style="width=100%">
+            <div class="card-body">
+              <p class="card-text"><b>2024-Present:</b> National College of Ireland, Dublin<br>
+    				<b>Qualification:</b> Higher Diploma in Science in Computing Level 8<br>
+    				<b>Results:</b> Due December 2025</p>
+            </div>
+          </div>
+		</div>
+		<div class="col-lg-3 col-sm-6">
+	      <div class="card">
+            <img class="card-img-top" src="images/white-maynooth.png" alt="Card image" style="width=100%">
+            <div class="card-body">
+              <p class="card-text"><b>2004-2007 & 2015:</b> National University of Ireland, Maynooth<br>
+    				<b>Qualification:</b> Bachelor of Arts Level 8 in English and Geography<br>
+    				<b>Results:</b> Honors Degree H2.1</p>
+            </div>
+          </div>
+		</div>
+		<div class="col-lg-3 col-sm-6">
+	      <div class="card">
+            <img class="card-img-top" src="images/white-src.png" alt="Card image" style="width=100%">
+            <div class="card-body">
+              <p class="card-text"><b>2012-2013:</b> Southern Regional College, Newry Campus<br>
+							<b>Qualification:</b> Certificate in Counselling Skills<br>
+				    <b>Results:</b> Distinction</p>
+            </div>
+          </div>
+		</div>
+		<div class="col-lg-3 col-sm-6">
+	      <div class="card">
+            <img class="card-img-top" src="images/white-harvard.png" alt="Card image" style="width=100%">
+            <div class="card-body">
+              <p class="card-text"><b>2023-2023:</b> Harvard University, Cambridge, Massachusetts<br><b>Qualification:</b> CS50: Introduction to Computer Science<br><b>Results:</b> Distinction</p>
+            </div>
+          </div>
+		</div>
+	</div>
+</div>
 
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-hMYGwrJ0St7Mub12lxGpKiXA-9EvGb8&amp;callback=myMap"></script>
+<div id="experience" class="container-fluid padded-container">
+	<div class="row justify-text">
+		<div class="col-lg-1"></div>
+		<div class="col-lg-5 col-sm-12">
+			<div id="experience">
+    		<h2> Experience</h2>
+    		<h4> RCH TECHNOLOGIES | ADMIN, UX & QA | JANUARY 2018 - PRESENT </h4>
+    		<ul>
+    		<li>Design and Quality Assurance of a number of Android applications developed to promote a healthy diet and eating for families. <a href="https://play.google.com/store/apps/developer?id=RCH+Technologies" target="_blank">Tots2Toddlers on Play Store</a></li>
+    		<li><a href="https://tots2toddlers.rchtech.ie" target="_blank">Tots2Toddlers</a> website, focused on baby lead weaning and meal planning.</li>
+    		<li>Social Media management and promotion to reach out to a wide audience. <a href="https://www.instagram.com/tots_2_toddlers/?utm_source=ig_embed&ig_rid=f39ddfcd-2db5-4cff-b216-92ea15f11cb0" target="_blank">Instagram</a></li>
+    		<li>General administrative duties - VAT returns, tax returns, payroll, contracts and accounts.</li>
+    		</ul>
+    	</div>
+
+		</div>
+		<div class="col-lg-6 col-sm-12">
+			<div class="center">
+				<img src="images/tots2toddlers-devices.png" class="img-fluid float-end" alt="Tots 2 Toddlers"/>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid padded-container bg-blue">
+	<div class="row justify-text">
+    	<div id="skills" class="col-sm-4">
+    	  <div class="card">
+            <div class="card-body">
+              <h2 class="card-title">Skills & Abilities</h2>
+              <p class="card-text">
+                <ul>
+        			<li>Design Oriented.</li>
+        			<li>Attention to detail.</li>
+        			<li>Focused on customer experience.</li>
+        			<li>Analytical & Problem Solving.</li>
+    		    </ul>
+              </p>
+            </div>
+          </div>
+    	</div>
+  
+    	<div id="interests" class="col-sm-4">
+    	   <div class="card">
+            <div class="card-body">
+              <h2 class="card-title">Activities & Interests</h2>
+              <p class="card-text">
+        		<ul>
+        			<li>Technology.</li>
+        			<li>Cooking, Diet & Nutrition.</li>
+        			<li>Healthy Living.</li>
+        			<li>Hiking & Fitness.</li>
+        		</ul>
+              </p>
+            </div>
+          </div>
+    	</div>
+
+        <div id="social" class="col-sm-4">
+          <div class="card">
+            <div class="card-body">
+              <h2 class="card-title">Social Media</h2>
+              <p class="card-text">
+       		    <ul>
+        			<li><a href="https://www.instagram.com/tots_2_toddlers/?utm_source=ig_embed&ig_rid=f39ddfcd-2db5-4cff-b216-92ea15f11cb0" target="_blank">Instagram.</a></li>
+        			<li><a href="https://www.facebook.com/toddlerfoodie" target="_blank">Facebook.</a></li>
+        			<li><a href="https://www.linkedin.com/in/rachel-callan-079b0b64/" target="_blank">LinkedIn.</a></li>
+        			<li><a href="https://www.linkedin.com/in/rachel-callan-079b0b64/" target="_blank">Blog.</a></li>
+        		</ul>
+              </p>
+            </div>
+          </div>
+    	</div>
+    </div>
+</div>
+
+<div id="contact" class="container-fluid padded-container">
+	<div class="row justify-text">
+		<div class="col-lg-4 col-sm-12">
+			<div class="center">
+        		<h2> Contact</h2>
+        		<div>
+    				<p> RACHEL ROCHE, <br>2A Forest Way, <br>River Valley, <br>Swords, <br>Co. Dublin. <br> 
+    				<a href="mailto:rachelcallan@live.ie" target="_blank">rachelcallan@live.ie</a> <br> +353 83 4284297 </p>
+    			</div>
+        	</div>
+		</div>
+		<div class="col-lg-4 col-sm-12">
+			<div class="center">
+				<img src="images/rachel.jpg" class="rounded-circle img-fluid" alt="Rachel Roche" style="height:300px;"/>
+			</div>
+		</div>
+		<div class="col-lg-4 col-sm-12">
+			<div class="center">
+				<img src="images/logo-tech.png" class="rounded-circle img-fluid" alt="Tech Logo" style="height:300px;"/>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Add Google Maps -->
+<div id="googleMap" style="height: 400px; width: 100%;"></div>
+
+</body>
+
+<script>
+	function myMap() {
+		var myCenter = new google.maps.LatLng(53.450538, -6.239845);
+		var mapProp = {
+			center : myCenter,
+			zoom : 12,
+			scrollwheel : false,
+			draggable : false,
+			mapTypeId : google.maps.MapTypeId.ROADMAP
+		};
+		var map = new google.maps.Map(document.getElementById("googleMap"),
+				mapProp);
+		var marker = new google.maps.Marker({
+			position : myCenter
+		});
+		marker.setMap(map);
+	}
+</script>
+<script
+	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-hMYGwrJ0St7Mub12lxGpKiXA-9EvGb8&amp;callback=myMap">
+</script>
 	
 </html>

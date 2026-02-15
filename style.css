@@ -1,19 +1,29 @@
-h1{
-	color: #00AADB;
-	font-family: "Roboto", sans-serif;
-	text-shadow: 2px 2px;
+body {
+	font: 400 15px Lato, sans-serif;
+	line-height: 1.8;
+	color: #818181;
+	background-color: #FEFEFFE;
 }
-h2{
-	color: #00AADB;
+
+h2 {
+	color: #173148;
 	font-family: "Roboto", sans-serif;
 }
 
-h3,p,li{
-	color: #080808;
+h4 {
+	font-size: 19px;
+	line-height: 1.375em;
+	color: #303030;
+	font-weight: 400;
+	margin-bottom: 30px;
+}
+
+p,li {
+	color: #173148;
 	font-family: "Montserrat", sans-serif;
 }
 
-ul{
+ul {
 	list-style-type:circle;
 }
 
@@ -22,93 +32,46 @@ a {
 	font-family: "Montserrat", sans-serif;
 }
 
-body{
-	background-color: #FEFEFFE;
+span {
+	white-space: nowrap;
 }
 
-img {
-  border-radius: 50%;
+.bg-blue {
+	background-color: #173148;
 }
 
-div {
-	padding-top: 10px;
-	padding-right: 5px;
-	padding-bottom: 5px;
-	padding-left: 5px;
+.center {
+	text-align: center;
+	margin-left: 1em;
 }
 
-.nav-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #00AADB;
+.center-align {
+    align-items: center
 }
 
-.nav-li {
-  float: left;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+.justify-text {
+	text-align: justify;
+	text-justify: inter-word;
 }
 
-@media(min-width:768px) {
-	.container-1{
-		display:flex;
-		border: 1px #ccc solid;
-		padding: 10px;
-
-	}
-
-	.container-2{
-		display:flex;
-		align-items: center;
-		justify-content: space-between;
-	}
-	
-	.container-3{
-		display:flex;
-	}
+.padded-logo {
+	padding: 10px 10px 10px 50px;
 }
 
-.wrapper {
-	flex:1;
-	order:1;
+.padded-container {
+	padding: 60px 50px;
 }
 
-.box-1{
-	flex:1;
-	order:1;
+.navbar {
+	background-color: white;
+	font-size: 15px;
+	line-height: 1.42857143;
+	letter-spacing: 4px;
+	font-family: Montserrat, sans-serif;
 }
 
-.box-2{
-	flex:1;
-	order:2;
+.dropdown-menu-right {
+   right: 0 !important;
+   left: auto !important;
 }
 
-.nav-1{
-	flex:1;
-	order:1;
-}
-.nav-2{
-	flex:1;
-	order:2;
-}
-.nav-3{
-	flex:1;
-	order:3;
-}
-.nav-4{
-	flex:1;
-	order:4;
-}
-.nav-5{
-	flex:1;
-	order:5;
-}
-.nav-6{
-	flex:1;
-	order:6;
-}
